@@ -14,7 +14,10 @@ module.exports = {
 			exclude: /node_modules/  //files/folders to exclude
 		}]
 	},
-	devtool: 'cheap-module-eval-source-map'
+	devtool: 'cheap-module-eval-source-map',
+	devServer: {
+		contentBase: path.join(__dirname, 'public')
+	}
 };
 
 
